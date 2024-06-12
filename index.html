@@ -224,6 +224,14 @@
                     <tr>\
                         <td class="visible-with-data" id="ha"colspan="2"><strong>ha</strong><br />' + (feature.properties['ha'] !== null ? autolinker.link(feature.properties['ha'].toLocaleString()) : '') + '</td>\
                     </tr>\
+                    <tr>\
+                        <th scope="row">Excel_13_06_Właściciel</th>\
+                        <td>' + (feature.properties['Excel_13_06_Właściciel'] !== null ? autolinker.link(feature.properties['Excel_13_06_Właściciel'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Excel_13_06_Powiadomienie</th>\
+                        <td>' + (feature.properties['Excel_13_06_Powiadomienie'] !== null ? autolinker.link(feature.properties['Excel_13_06_Powiadomienie'].toLocaleString()) : '') + '</td>\
+                    </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
             var popup = layer.getPopup();
